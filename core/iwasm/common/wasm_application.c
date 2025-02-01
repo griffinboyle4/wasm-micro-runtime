@@ -712,7 +712,7 @@ execute_func(WASMModuleInstanceCommon *module_inst, const char *name,
             }
             case VALUE_TYPE_F32:
             {
-                os_printf("%.7g:f32", *(float32 *)(argv1 + k));
+                os_printf("%.7g:f32", *(float64 *)(argv1 + k));
                 k++;
                 break;
             }
